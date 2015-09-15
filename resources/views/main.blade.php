@@ -19,7 +19,7 @@
 	
 	<!-- Load CSS Compilled without JS -->
 	<noscript><link rel="stylesheet" href="compiled.min.css"></noscript>
-
+	<link rel="stylesheet" href="{{ asset('css/main.css') }}">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -30,7 +30,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/css/main.css">
+	
 
 
 	
@@ -42,7 +42,7 @@
 		<div class="container main-screeen">
 			<div class="row">
 				<div class="col-md-1 col-sm-1 col-xs-2">
-					<img class="logo" src="/img/logo.png" alt="harvest-logo">
+					<img class="logo" src="{{ asset('img/logo.png') }}" alt="harvest-logo">
 				</div>
 				<div class="col-md-5 col-sm-6 col-xs-5 ">
 					<div class="logo_descript">

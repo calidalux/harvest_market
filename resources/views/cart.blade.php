@@ -19,7 +19,7 @@
 	<div class="row">
 		<div class="col-md-3">
 			<div class="tire-img">
-				<img src="/img/710.jpg" alt="">
+				<img src="{{ asset('img/710.jpg') }}" alt="">
 			</div>
 		</div>
 	</div>
