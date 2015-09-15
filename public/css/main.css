@@ -1,0 +1,47 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.logo{
+	box-shadow: 0 2px 2px #999;
+}
+.header{
+	border-bottom: 1px solid #dee0df;
+	height: 80px;
+	background-color: #f5f5f5;
+	width: 100%;
+
+}
+.harvest {
+    font-size: 16px;
+    margin-top: 28px;
+    font-weight: 300;
+}
+.call{
+	font-size: 18px;
+	color: #999;
+	margin-top: 24px;
+	float: right;
+	margin-right: 30px;
+}
+.phone{
+	color: #c93444;
+	margin-top: 24px;
+	font-size: 24px;
+	float: right;
+	font-weight: 600;
+}
+.logo_descript {
+    margin-top: 18px;
+}
+.bread{
+	margin-top: 15px;
+	font-weight: 300;
+}
+a{
+	text-decoration: underline;
+}
+
+.spliter{
+	margin: 0 10px;
+}
