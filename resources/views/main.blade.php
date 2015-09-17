@@ -92,7 +92,7 @@
 	ms.href="_media.css";document.getElementsByTagName("head")[0].appendChild(ms);
 </script>
 
-<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+
 
 <!-- Load CSS compiled without Bootstrap & Header styles (after release) -->
 <script>var ms=document.createElement("link");ms.rel="stylesheet";
@@ -103,6 +103,10 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="{{ asset('js/main.js') }}"></script>
+<script src="{{ asset('js/typeahead.bundle.js') }}"></script>
+
 
 
 </body>
