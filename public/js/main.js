@@ -1,7 +1,10 @@
 jQuery(document).ready(function($) {
     var engine = new Bloodhound({
-        remote: '/query?filterTire=%QUERY%',
-        // '...' = displayKey: '...'
+        remote: 
+        { 
+            url :'query?filterTire=%QUERY%',
+            wildcard: '%QUERY%'
+        },
         datumTokenizer: Bloodhound.tokenizers.whitespace('width'),
         queryTokenizer: Bloodhound.tokenizers.whitespace
     });
@@ -20,7 +23,7 @@ jQuery(document).ready(function($) {
         displayKey: 'width',
         templates: {
             empty: [
-                '<div class="empty-message">Ничего нет</div>'
+            '<div class="empty-message">Ничего нет</div>'
             ]
         }
     });
