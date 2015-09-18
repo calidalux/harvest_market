@@ -24,9 +24,13 @@ class TiresController extends Controller {
 		$tires = Tire::where(function($query){
 
 			$filter_tire_size = Input::has('filterTireSize') ? Input::get('filterTireSize') : null;
+			$filter_tire_brand = Input::has('filterTireBrand') ? Input::get('filterTireBrand') : null;
 
 			if (isset($filter_tire_size)) {
 				$query->where('size', $filter_tire_size);
+			}
+			if (isset($filter_tire_brand) && ($filter_tire_brand != 'любой')) {
+				$query->where('brand', $filter_tire_brand);
 			}
 
 		})->get();
