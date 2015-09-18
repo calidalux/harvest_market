@@ -15,15 +15,15 @@
 			@include('filter')
 		</div>
 		<div class="col-md-8">
-		
+
 			@foreach ($tires as $tire)
-			<div class="col-md-3">
-				<ul>
-					<li>
-						{{ $tire->width }}@if ($tire->height != NULL )/{{ $tire->height }}R @else-@endif{{ $tire->rim }} {{ $tire->brand }} {{ $tire->model }}
-					</li>
-					<li>Цена: {{ $tire->price }}</li>
-				</ul>
+			<div class="row tireCart">
+				<div class="col-md-8 tireName">
+							{{ $tire->width }}@if ($tire->height != NULL )/{{ $tire->height }}R @else-@endif{{ $tire->rim }} {{ $tire->brand }} {{ $tire->model }}
+				</div>
+				<div class="col-md-4">
+					{{ number_format($tire->price, 0, ',', ' ')  }} руб.
+				</div>
 			</div>
 			@endforeach
 
