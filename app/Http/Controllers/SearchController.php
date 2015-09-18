@@ -3,7 +3,7 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Input;
-use App\Tire;
+use App\Typeahead;
 use Response;
 
 use Illuminate\Http\Request;
@@ -18,7 +18,7 @@ class SearchController extends Controller {
     public function query()
     {
         $query = Input::get('filterTire');
-        $res   = Tire::where('width', 'LIKE', "%$query%")->get();
+        $res   = Typeahead::where('width', 'LIKE', "%$query%")->get();
         return Response::json($res);
     }
 

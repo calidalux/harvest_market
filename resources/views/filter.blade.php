@@ -9,7 +9,7 @@
 				<div class="col-xs-5 option-title">
 					Тип шины:
 				</div>
-				<input type="text" id="filterTire">
+				<input type="text" id="filterTire" name="filterTireSize" value="{{Input::get('filterTireSize')}}">
 			</div>
 			<button>OK</button>
 		</form>

@@ -28,7 +28,7 @@ class CreateTiresTable extends Migration {
 			$table->integer('inStock');	//В наличии
 			$table->string('tech');		//Слойность, ИН/CC
 			$table->string('type');		//Назначение
-						
+			$table->string('size');		//Размер строка
 			$table->timestamps();
 		});
 	}

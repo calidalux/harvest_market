@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder {
 		Model::unguard();
 
 		$this->call('tiresSeeds');
+		$this->call('Typeahead');
 	}
 
 }
@@ -35,7 +36,8 @@ class tiresSeeds extends Seeder{
 			'inStock'	=> 0,
 			'tech'		=> '179A8/B',
 			'type'		=> 'Сельхоз шина',
-			'price'		=> 143970
+			'price'		=> 143970,
+			'size'		=> '710/70R42'
 
 			],
 
@@ -51,7 +53,8 @@ class tiresSeeds extends Seeder{
 			'inStock'	=> '2',
 			'tech'		=> '173D',
 			'type'		=> 'Сельхоз шина',
-			'price'		=> 156200
+			'price'		=> 156200,
+			'size'		=> '710/70R42'
 
 			],
 			[
@@ -66,7 +69,8 @@ class tiresSeeds extends Seeder{
 			'inStock'	=> '10',
 			'tech'		=> '12 PLY',
 			'type'		=> 'Сельхоз шина',
-			'price'		=> 9990
+			'price'		=> 9990,
+			'size'		=> '11L-15SL'
 
 			],
 			[
@@ -81,10 +85,40 @@ class tiresSeeds extends Seeder{
 			'inStock'	=> '0',
 			'tech'		=> '145D',
 			'type'		=> 'Сельхоз шина',
-			'price'		=> 53990
+			'price'		=> 53990,
+			'size'		=> '480/70R30'
 
 			]
 
+			]
+
+			);
+}
+}
+
+class Typeahead extends Seeder{
+	public function run()
+	{
+		DB::table('typeaheads')->insert([
+
+			[
+			'width' 	=> '710',
+			'height' 	=> '70',
+			'rim' 		=> '42',
+			'size'		=> '710/70R42'
+			],
+			[
+			'width' 	=> '11L',
+			'height' 	=> '',
+			'rim' 		=> '15SL',
+			'size'		=> '11L-15SL'
+			],
+			[
+			'width' 	=> '480',
+			'height' 	=> '70',
+			'rim' 		=> '30',
+			'size'		=> '480/70R30'
+			]
 			]
 
 			);
