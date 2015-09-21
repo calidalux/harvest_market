@@ -1,4 +1,4 @@
-<div class="cart">
+<div class="cart margin-top-10">
 	<div class="top-filter-header">
 		<h4>Поиск по каталогу шин:</h4>
 	</div>

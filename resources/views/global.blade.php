@@ -20,4 +20,6 @@
 	</div>
 </div>
 
+@include('hits')
+
 @stop
