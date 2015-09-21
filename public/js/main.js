@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
     var engine = new Bloodhound({
         remote: 
         { 
-            url :'query?filterTire=%QUERY%',
+            url :'/query?filterTire=%QUERY%',
             wildcard: '%QUERY%'
         },
         datumTokenizer: Bloodhound.tokenizers.whitespace('size'),

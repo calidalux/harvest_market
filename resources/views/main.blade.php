@@ -48,10 +48,10 @@
 					<div class="logo_descript">
 						<span class="harvest">ООО "ХАРВЕСТ"</span>
 						<br>
-						Поставка груовых и сельскохозяйственных шин
+						Поставка грузовых и сельскохозяйственных шин
 					</div>
 				</div>
-				<div class="col-md-5  col-xs-5">
+				<div class="col-md-6  col-xs-5">
 					<div class="phone">
 						8 (8452) 33-88-50
 					</div>

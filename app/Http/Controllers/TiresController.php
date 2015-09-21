@@ -39,6 +39,12 @@ class TiresController extends Controller {
 
 		return view('agri', compact('tires'));
 	}
+
+	public function cart($id)
+	{
+		$tire = Tire::find($id);
+		return view('cart', compact('tire'));
+	}
 	
 
 }

@@ -4,7 +4,7 @@
 	</div>
 
 	<div class="filter-main">
-		<form action="{{ URL::current() }}">
+		<form action="/agri">
 			<div class="row">
 				<div class="col-xs-5 option-title">
 					Типоразмер:
