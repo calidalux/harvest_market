@@ -18,7 +18,7 @@
 
 			@foreach ($tires as $tire)
 			
-			<div class="row tireCart">
+			<div class="row">
 				<div class="col-md-3">
 					<img src="{{ asset($tire->img) }}">
 				</div>
@@ -38,16 +38,14 @@
 									{{ $tire->type }}
 								</div>
 								<div class="col-md-5 update_time">
-									Обновлено: {{ date('d. m. y', strtotime($tire->updated_at)) }}г.
+									Актуально: {{ date('d. m. y', strtotime($tire->updated_at)) }}г.
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-7 more_link">
 									 <a href="/agri/{{ $tire->id }}">Подбробнее о шине</a>
 								</div>
-								<div class="col-md-5">
-									<button class="cat_button">Купить по телефону</button>
-								</div>
+								
 							</div>
 						</div>
 

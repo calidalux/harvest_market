@@ -1,6 +1,6 @@
 <div class="cart">
 	<div class="top-filter-header">
-		<h4>Поиск по каталогу:</h4>
+		<h4>Поиск по каталогу шин:</h4>
 	</div>
 
 	<div class="filter-main">
