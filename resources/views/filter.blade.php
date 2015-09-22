@@ -1,6 +1,6 @@
 <div class="cart margin-top-10">
 	<div class="top-filter-header">
-		<h4>Поиск по каталогу шин:</h4>
+		<h4>Поиск по складу:</h4>
 	</div>
 
 	<div class="filter-main">
@@ -26,7 +26,7 @@
 					</select>
 				</div>
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-xs-12">
 						<button class="filter-button">Найти шину</button>
 					</div>
 				</div>

@@ -41,20 +41,16 @@
 	<section class="header">
 		<div class="container main-screeen">
 			<div class="row">
-				<div class="col-md-1 col-sm-1 col-xs-2">
-					<img class="logo" src="{{ asset('img/logo.png') }}" alt="harvest-logo">
+				<div class="col-xs-2">
+					<a href="/"><img class="logo" src="{{ asset('img/logo.png') }}" alt="harvest-logo"></a>
 				</div>
-				<div class="col-md-5 col-sm-6 col-xs-5 ">
-					<div class="logo_descript">
-						<span class="harvest">ООО "ХАРВЕСТ"</span>
-						<br>
-						Поставка грузовых и сельскохозяйственных шин
-					</div>
-				</div>
-				<div class="col-md-6  col-xs-5">
-					<div class="phone">
-						8 (8452) 33-88-50
-					</div>
+				<div class="col-xs-10">
+					<nav class="menu">
+						<a href="#">Грузовые шины</a>
+						<a href="/agri">Сельхоз шины</a>
+						<a href="#">Мобильный шиномонтаж</a>
+						<a href="#">Контакты</a>
+					</nav>
 				</div>
 
 			</div>
@@ -62,7 +58,7 @@
 	</section>
 	
 
-		@yield('content')
+	@yield('content')
 
 
 
