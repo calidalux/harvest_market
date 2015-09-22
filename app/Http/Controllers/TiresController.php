@@ -23,8 +23,13 @@ class TiresController extends Controller {
 	{
 		$tires = Tire::where(function($query){
 
+			$filter_tire_class = Input::has('filterTireClass') ? Input::get('filterTireClass') : null;
 			$filter_tire_size = Input::has('filterTireSize') ? Input::get('filterTireSize') : null;
 			$filter_tire_brand = Input::has('filterTireBrand') ? Input::get('filterTireBrand') : null;
+
+			if (isset($filter_tire_class)) {
+				$query->where('class', $filter_tire_class);
+			}
 
 			if (isset($filter_tire_size)) {
 				$query->where('size', $filter_tire_size);
@@ -37,7 +42,7 @@ class TiresController extends Controller {
 
 		
 
-		return view('agri', compact('tires'));
+		return view('catalog', compact('tires'));
 	}
 
 	public function cart($id)

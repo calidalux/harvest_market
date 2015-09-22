@@ -232,3 +232,11 @@ hr{
 .container{
 	width: 960px !important;
 }
+.img-cart img
+{
+	width: 100px;
+}
+.padding10vert
+{
+	padding: 10px 0;
+}
