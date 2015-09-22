@@ -5,21 +5,21 @@
 	<div class="row">
 		<div class="col-xs-12">
 			<div class="bread">
-				<a href="#">Магазин</a><span class="spliter">></span>
+				<a href="/">Главная</a><span class="spliter">></span>
 				Сельхоз шины
 			</div>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-xs-4">
+		<div class="col-xs-5">
 			@include('filter')
 		</div>
-		<div class="col-xs-8">
+		<div class="col-xs-7">
 
 			@foreach ($tires as $tire)
 			
-			<div class="row">
-				<div class="col-xs-3">
+			<div class="row padding10vert">
+				<div class="col-xs-3 img-cart">
 					<img src="{{ asset($tire->img) }}">
 				</div>
 				<div class="col-xs-9">
@@ -27,7 +27,7 @@
 						<div class="com-xs-12">
 							<div class="row">
 								<div class="col-xs-7 tireName">
-									{{ $tire->width }}@if ($tire->height != NULL )/{{ $tire->height }}R @else-@endif{{ $tire->rim }} {{ $tire->model }}
+									{{ $tire->size }} {{ $tire->model }}
 								</div>
 								<div class="col-xs-5 price_main">
 									{{ number_format($tire->price, 0, ',', ' ')  }} руб.

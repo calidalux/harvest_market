@@ -4,7 +4,18 @@
 	</div>
 
 	<div class="filter-main">
-		<form action="/agri">
+		<form action="/catalog">
+			<div class="row">
+				<div class="col-xs-5 option-title">
+					Тип шины:
+				</div>
+				<div class="col-xs-7 filter-option">
+					<select name="filterTireClass">
+						<option {{ (Input::get('filterTireClass') == 'Грузовые шины') ? 'selected' : '' }}>Грузовые шины</option>
+						<option {{ (Input::get('filterTireClass') == 'Сельхоз шины') ? 'selected' : '' }}>Сельхоз шины</option>
+					</select>
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-xs-5 option-title">
 					Типоразмер:

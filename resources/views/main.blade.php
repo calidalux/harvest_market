@@ -46,8 +46,8 @@
 				</div>
 				<div class="col-xs-10">
 					<nav class="menu">
-						<a href="#">Грузовые шины</a>
-						<a href="/agri">Сельхоз шины</a>
+						<a href="/catalog?filterTireClass=Грузовые+шины">Грузовые шины</a>
+						<a href="/catalog?filterTireClass=Сельхоз+шины">Сельхоз шины</a>
 						<a href="#">Мобильный шиномонтаж</a>
 						<a href="#">Контакты</a>
 					</nav>
