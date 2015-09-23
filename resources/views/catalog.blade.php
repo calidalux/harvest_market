@@ -43,7 +43,7 @@
 							</div>
 							<div class="row">
 								<div class="col-xs-7 more_link">
-									 <a href="/agri/{{ $tire->id }}">Подбробнее о шине</a>
+									 <a href="/catalog/{{ $tire->id }}">Подбробнее о шине</a>
 								</div>
 								
 							</div>

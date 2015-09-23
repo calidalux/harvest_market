@@ -16,9 +16,6 @@ class CreateTypeahead extends Migration {
 		{
 			$table->increments('id');
 			$table->string('size');
-			$table->string('width'); 	//Ширина профиля
-			$table->string('height'); //Высота профиля
-			$table->string('rim');		//Диск
 			$table->timestamps();
 		});
 	}

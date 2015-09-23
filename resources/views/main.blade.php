@@ -41,18 +41,19 @@
 	<section class="header">
 		<div class="container main-screeen">
 			<div class="row">
-				<div class="col-xs-2">
+				<div class="col-xs-1">
 					<a href="/"><img class="logo" src="{{ asset('img/logo.png') }}" alt="harvest-logo"></a>
 				</div>
-				<div class="col-xs-10">
+				<div class="col-xs-8">
 					<nav class="menu">
 						<a href="/catalog?filterTireClass=Грузовые+шины">Грузовые шины</a>
 						<a href="/catalog?filterTireClass=Сельхоз+шины">Сельхоз шины</a>
-						<a href="#">Мобильный шиномонтаж</a>
 						<a href="#">Контакты</a>
 					</nav>
 				</div>
-
+				<div class="col-xs-3">
+					<div class="phone">8 (8452) 33-88-50</div>
+				</div>
 			</div>
 		</div>
 	</section>

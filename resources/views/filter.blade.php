@@ -1,4 +1,4 @@
-<div class="cart margin-top-10">
+<div class="cart">
 	<div class="top-filter-header">
 		<h4>Поиск по складу:</h4>
 	</div>
@@ -11,6 +11,7 @@
 				</div>
 				<div class="col-xs-7 filter-option">
 					<select name="filterTireClass">
+						<option {{ (Input::get('filterTireClass') == 'любой') ? 'selected' : '' }}>любой</option>
 						<option {{ (Input::get('filterTireClass') == 'Грузовые шины') ? 'selected' : '' }}>Грузовые шины</option>
 						<option {{ (Input::get('filterTireClass') == 'Сельхоз шины') ? 'selected' : '' }}>Сельхоз шины</option>
 					</select>
@@ -30,10 +31,10 @@
 				</div>
 				<div class="col-xs-7 filter-option">
 					<select name="filterTireBrand">
-						<option {{ (Input::get('filterTireBrand') == 'любой') ? 'selected' : '' }}> любой</option>
-						<option {{ (Input::get('filterTireBrand') == 'Firestone') ? 'selected' : '' }}>Firestone</option>
-						<option {{ (Input::get('filterTireBrand') == 'Titan') ? 'selected' : '' }}>Titan</option>
-						<option {{ (Input::get('filterTireBrand') == 'Treleborg') ? 'selected' : '' }}>Trelleborg</option>
+							<option {{ (Input::get('filterTireBrand') == 'любой') ? 'selected' : '' }}> любой</option>
+							<option {{ (Input::get('filterTireBrand') == 'Firestone') ? 'selected' : '' }}>Firestone</option>
+							<option {{ (Input::get('filterTireBrand') == 'Titan') ? 'selected' : '' }}>Titan</option>
+							<option {{ (Input::get('filterTireBrand') == 'Treleborg') ? 'selected' : '' }}>Trelleborg</option>
 					</select>
 				</div>
 				<div class="row">
