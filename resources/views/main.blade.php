@@ -50,7 +50,7 @@
 							<a class="black" href="/">все шины</a>
 							<a class="blue" href="/?filterTireClass=Грузовые+шины">Грузовые шины</a>
 							<a class="orange" href="/?filterTireClass=Сельхоз+шины">Сельхоз шины</a>
-							<a class="green" href="#">индустриальные шины</a>
+							<!-- <a class="green" href="#">индустриальные шины</a> -->
 						</div>
 					</div>
 					<div class="row">
@@ -62,8 +62,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-3">
-					<div class="phone">8 (8452) 33-88-50</div>
+				<div class="col-xs-3 info_header">
+					Заявки принимаются по телефону: <br>
+					<div class="phone">8 (8452) 33-88-50</div><br>
+					Пн.-Пт. с 9:00 до 17:00 МСК
 				</div>
 			</div>
 		</div>
