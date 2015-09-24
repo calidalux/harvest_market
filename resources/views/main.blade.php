@@ -39,17 +39,28 @@
 <body>
 
 	<section class="header">
-		<div class="container main-screeen">
+		<div class="container-fluid main-screeen">
 			<div class="row">
 				<div class="col-xs-1">
 					<a href="/"><img class="logo" src="{{ asset('img/logo.png') }}" alt="harvest-logo"></a>
 				</div>
 				<div class="col-xs-8">
-					<nav class="menu">
-						<a href="/catalog?filterTireClass=Грузовые+шины">Грузовые шины</a>
-						<a href="/catalog?filterTireClass=Сельхоз+шины">Сельхоз шины</a>
-						<a href="#">Контакты</a>
-					</nav>
+					<div class="row">
+						<div class="col-xs-12 top-nav-filter">
+							<a class="black" href="/catalog?filterTireClass=Грузовые+шины">все шины</a>
+							<a class="blue" href="/catalog?filterTireClass=Грузовые+шины">Грузовые шины</a>
+							<a class="orange" href="/catalog?filterTireClass=Сельхоз+шины">Сельхоз шины</a>
+							<a class="green" href="#">индустриальные шины</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-9 filter-option">
+							<form action="{{ URL::current() }}">
+								<input type="text" id="filterTire" name="filterTireSize" value="{{Input::get('filterTireSize')}}" placeholder="Типоразмер шины (Например 710/70R42)">
+								<button class="top-button">Поиск</button>
+							</form>
+						</div>
+					</div>
 				</div>
 				<div class="col-xs-3">
 					<div class="phone">8 (8452) 33-88-50</div>
@@ -57,7 +68,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 
 	@yield('content')
 

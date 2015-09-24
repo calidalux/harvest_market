@@ -2,18 +2,30 @@
 
 @section('content')
 
-<div class="container">
+<div class="container-fluid">
 
-	<div class="row">
-		<div class="col-xs-7">
-			@include('main_banner')
-		</div>
-		<div class="col-xs-5">
-			@include('filter')
+@foreach($tires as $tire)
+
+	<div class="col-xs-3">
+		<div class="cart">
+					<div class="header_cart">
+					<span class="cart_title_size">{{ $tire->size}}</span> <br>
+					<span class="cart_title_model">{{ $tire->model}}</span>
+					</div>
+					<div class="img_cart">
+						<img src="{{ asset($tire->img_big) }}">
+					</div>
+					<div class="price">
+						{{ number_format($tire->price, 0, ',', ' ')  }} руб.
+					</div>
+					<div class="more">
+						<a href="">Подробнее...</a>
+					</div>
+					<div class="icon">
+						<img src="{{ asset("img/agri_icon.png") }}">
+					</div>
 		</div>
 	</div>
-</div>
-
-@include('hits')
+@endforeach
 
 @stop
