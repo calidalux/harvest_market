@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container-fluid">
+<div class="container-fluid padding-top-76">
 
 @foreach($tires as $tire)
 
