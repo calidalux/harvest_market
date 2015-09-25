@@ -1,4 +1,10 @@
 jQuery(document).ready(function($) {
+
+    $('#MAIN_BUTTON').magnificPopup({
+        type:'inline',
+        midClick: true 
+    });
+
     var engine = new Bloodhound({
         remote: 
         { 
