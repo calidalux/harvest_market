@@ -31,7 +31,6 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="{{ asset('css/main.css') }}">
-	<link rel="stylesheet" href="{{ asset('libs/magnific-popup/magnific-popup.css') }}">
 
 
 	
@@ -116,7 +115,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="{{ asset('js/typeahead.bundle.js') }}"></script>
-<script src="{{ asset('libs/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
 <script src="{{ asset('js/main.js') }}"></script>
 
 

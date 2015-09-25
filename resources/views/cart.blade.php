@@ -44,29 +44,12 @@
 							<td>{{ $tire->r_type }}</td>
 						</tr>
 					</table>
-					<button href="#PRICE" class="callback_button" id="MAIN_BUTTON">Заказ по телефону</button>
+					<button href="#PRICE" class="callback_button" id="MAIN_BUTTON">Узнать цену с доставкой</button>
 				</div>
 			</div>
-
 		</div>
 	</div>
 
-</div>
-
-<div class="mfp-hide">
-	<div class="price_form" id="PRICE">
-		<div class="header_price_form">
-			Заказать {{ $tire->size}} {{ $tire->model}}
-		</div>
-		<div class="text_callback_form">
-			Для получения прайс-листа оставьте свой номер телефона.
-			(скачивание начнётся автоматически)
-		</div>
-		<form id="CALL_FORM">
-			<input type="text" requried name="phone_cb" placeholder="+7 (___) ___ - __ - __">
-			<button type="submit" class="callback_form_button">Скачать прайс-лист</button>
-		</form>
-	</div>
 </div>
 
 @stop

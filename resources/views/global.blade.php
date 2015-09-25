@@ -19,7 +19,7 @@
 						{{ number_format($tire->price, 0, ',', ' ')  }} руб.
 					</div>
 					<div class="more">
-						<a href="">Подробнее...</a>
+						<a href="/catalog/{{ $tire->id }}">Подробнее...</a>
 					</div>
 					<div class="icon">
 						<img src="{{ asset("img/agri_icon.png") }}">

@@ -355,7 +355,8 @@ hr{
 {
 	margin: 10px 25px;
 	font-size: 18px;
-	font-weight: 300;
+	font-weight: 600;
+	color: #c93444;
 }
 .more
 {
@@ -424,12 +425,4 @@ table
     padding: 15px;
     text-transform: uppercase;
     width: 76%;
-}
-.price_form{
-	background-color: white;
-	width: 500px;
-	height: 300px;
-	position: relative;
-	margin: auto;
-	padding: 30px 30px 10px 30px;
 }
