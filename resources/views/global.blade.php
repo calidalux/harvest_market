@@ -5,7 +5,6 @@
 <div class="container-fluid padding-top-76">
 
 @foreach($tires as $tire)
-
 	<div class="col-xs-3">
 		<div class="cart">
 

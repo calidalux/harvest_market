@@ -34,6 +34,8 @@ class WelcomeController extends Controller {
 	{
 		$tires = Tire::where(function($query){
 
+			$query->where('active', true);
+
 			$filter_tire_class = Input::has('filterTireClass') ? Input::get('filterTireClass') : null;
 			$filter_tire_size = Input::has('filterTireSize') ? Input::get('filterTireSize') : null;
 			$filter_tire_brand = Input::has('filterTireBrand') ? Input::get('filterTireBrand') : null;
