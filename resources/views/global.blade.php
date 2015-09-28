@@ -8,7 +8,10 @@
 
 	<div class="col-xs-3">
 		<div class="cart">
-					<div class="header_cart">
+
+					@if ($tire->class === 'Сельхоз шины') <div class="header_cart header_orange"> @endif
+					@if ($tire->class === 'Индустриальные шины') <div class="header_cart header_green"> @endif
+
 					<span class="cart_title_size">{{ $tire->size}}</span> <br>
 					<span class="cart_title_model">{{ $tire->model}}</span>
 					</div>
@@ -22,7 +25,9 @@
 						<a href="/catalog/{{ $tire->id }}">Подробнее...</a>
 					</div>
 					<div class="icon">
-						<img src="{{ asset("img/agri_icon.png") }}">
+						@if ($tire->class === 'Сельхоз шины') <img src="{{ asset("img/agri_icon.png") }}"> @endif
+						@if ($tire->class === 'Индустриальные шины') <img src="{{ asset("img/ind_icon.png") }}"> @endif
+						
 					</div>
 		</div>
 	</div>

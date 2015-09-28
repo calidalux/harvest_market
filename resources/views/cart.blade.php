@@ -5,7 +5,10 @@
 <div class="container-fluid">
 	<div class="col-xs-12 padding-top-76">
 		<div class="cart">
-			<div class="header_cart">
+
+					@if ($tire->class === 'Сельхоз шины') <div class="header_cart header_orange"> @endif
+					@if ($tire->class === 'Индустриальные шины') <div class="header_cart header_green"> @endif
+					
 				<span class="cart_title_size">{{ $tire->size}}</span> <br>
 				<span class="cart_title_model">{{ $tire->model}}</span>
 			</div>

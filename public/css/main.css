@@ -280,7 +280,7 @@ hr{
 }
 .green
 {
-	 color: #4caf50;
+	 color: #689f38;
 }
 .black
 {
@@ -322,13 +322,22 @@ hr{
 }
 .cart:hover
 {
-	box-shadow: 0px 4px 8px black;
+	box-shadow: 0px 8px 16px #999;
+	margin-bottom: 27px;
+	margin-top: 18px;
 }
 .header_cart
 {
-	background-color: #ff9100;
 	padding: 8px 0 6px 25px;
 	max-height: 60px;
+}
+.header_orange
+{
+	background-color: #ff9100;
+}
+.header_green
+{
+	background-color: #689f38;
 }
 .cart_title_size
 {
@@ -372,9 +381,8 @@ hr{
 	
 }
 .icon > img {
-    right: 35px;
-    position: absolute;
-    bottom: 45px;
+    margin: -90px 20px 0 0;
+    float: right;
 }
 .padding-top-76
 {

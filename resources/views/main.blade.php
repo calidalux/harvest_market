@@ -50,7 +50,7 @@
 							<a class="black" href="/">все шины</a>
 							<a class="blue" href="/?filterTireClass=Грузовые+шины">Грузовые шины</a>
 							<a class="orange" href="/?filterTireClass=Сельхоз+шины">Сельхоз шины</a>
-							<!-- <a class="green" href="#">индустриальные шины</a> -->
+							<a class="green" href="/?filterTireClass=Индустриальные+шины">Индустриальные шины</a>
 						</div>
 					</div>
 					<div class="row">
