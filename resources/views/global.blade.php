@@ -21,7 +21,7 @@
 						{{ number_format($tire->price, 0, ',', ' ')  }} руб.
 					</div>
 					<div class="more">
-						<a href="/catalog/{{ $tire->id }}">Подробнее...</a>
+						<a href="/catalog/{{ $tire->slug }}">Подробнее...</a>
 					</div>
 					<div class="icon">
 						@if ($tire->class === 'Сельхоз шины') <img src="{{ asset("img/agri_icon.png") }}"> @endif

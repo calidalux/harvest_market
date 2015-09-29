@@ -3,8 +3,8 @@
 @section('content')
 
 <div class="container-fluid">
-	<div class="col-xs-12 padding-top-76">
-		<div class="cart">
+	<div class="col-xs-12 col-lg-9 padding-top-76">
+		<div class="cart-cart">
 
 					@if ($tire->class === 'Сельхоз шины') <div class="header_cart header_orange"> @endif
 					@if ($tire->class === 'Индустриальные шины') <div class="header_cart header_green"> @endif
@@ -47,7 +47,7 @@
 							<td>{{ $tire->r_type }}</td>
 						</tr>
 					</table>
-					<button href="#PRICE" class="callback_button" id="MAIN_BUTTON">Узнать цену с доставкой</button>
+					<!--<button href="#PRICE" class="callback_button" id="MAIN_BUTTON">Узнать цену с доставкой</button> -->
 				</div>
 			</div>
 		</div>

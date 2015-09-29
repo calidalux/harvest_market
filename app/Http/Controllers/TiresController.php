@@ -45,9 +45,9 @@ class TiresController extends Controller {
 		return view('catalog', compact('tires'));
 	}
 
-	public function cart($id)
+	public function cart($slug)
 	{
-		$tire = Tire::find($id);
+		$tire = Tire::where('slug', '=', $slug)->firstOrFail();
 		return view('cart', compact('tire'));
 	}
 	
