@@ -53,6 +53,9 @@ class WelcomeController extends Controller {
 
 		})->get();
 
+		$tires = $tires->sortByDesc('updated_at');
+		$tires = $tires->take(8);
+
 		return view('global', compact('tires'));
 	}
 

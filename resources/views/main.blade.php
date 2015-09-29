@@ -85,31 +85,6 @@
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
 
-	<!-- Load CSS (remove/comment after release) -->
-	<script>
-	//Load Libs CSS
-	var ms=document.createElement("link");ms.rel="stylesheet";
-	ms.href="libs/animate/animate.css";document.getElementsByTagName("head")[0].appendChild(ms);
-
-	//Header Styles (compress & paste to header after release)
-	var ms=document.createElement("link");ms.rel="stylesheet";
-	ms.href="_header.css";document.getElementsByTagName("head")[0].appendChild(ms);
-	
-	//User Styles
-	var ms=document.createElement("link");ms.rel="stylesheet";
-	ms.href="_main.css";document.getElementsByTagName("head")[0].appendChild(ms);
-	var ms=document.createElement("link");ms.rel="stylesheet";
-	ms.href="_media.css";document.getElementsByTagName("head")[0].appendChild(ms);
-</script>
-
-
-
-<!-- Load CSS compiled without Bootstrap & Header styles (after release) -->
-<script>var ms=document.createElement("link");ms.rel="stylesheet";
-	// ms.href="compiled.min.css";document.getElementsByTagName("head")[0].appendChild(ms);
-</script>
-
-
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
