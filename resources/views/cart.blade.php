@@ -32,7 +32,7 @@
 						</tr>
 						<tr>
 							<td class="bold">Тип:</td>
-							<td> </td>
+							<td>{{ $tire->type_arch }}</td>
 						</tr>
 						<tr>
 							<td class="bold">ИН/CC, слои:</td>
@@ -43,13 +43,32 @@
 							<td>{{ $tire->country }}</td>
 						</tr>
 						<tr>
-							<td class="bold">Рисунок:</td>
-							<td>{{ $tire->r_type }}</td>
+							<td class="bold">К/БК:</td>
+							<td>{{ $tire->tube }}</td>
 						</tr>
 					</table>
-					<!--<button href="#PRICE" class="callback_button" id="MAIN_BUTTON">Узнать цену с доставкой</button> -->
+					<button href="#PRICE" class="callback_button" id="MAIN_BUTTON">Узнать цену с доставкой</button>
 				</div>
 			</div>
+		</div>
+	</div>
+	
+	<div class="mfp-hide">
+		<div class="price_form" id="PRICE">
+			<div class="header_price_form">
+				Куда доставить?	
+			</div>
+			
+			<form id="CALL_FORM">
+			<div class="text_callback_form">
+				<input type="hidden" name="tire" value="{{ $tire->size }} {{ $tire->brand }} {{ $tire->model }}">
+				Мы посчитаем доставку транспортной кампанией в город 
+
+				<input type="text" requried name="city" placeholder="Введите ваш город"> <br> и Вам перевоним на номер: <input type="text" requried name="phone" placeholder="Введите ваш номер"> <br>
+				 (через 10-15 минут)
+				<br>
+				<button align='center' type="submit" class="callback_form_button">Отправить</button>
+			</form>
 		</div>
 	</div>
 

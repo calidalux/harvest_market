@@ -426,10 +426,6 @@ table
 	margin-top: 5px;
 	
 }
-.callback_button
-{
-	background-color: #ff6600;
-}
 .callback_button {
     background-color: #ff6600;
     border: medium none;
@@ -451,4 +447,49 @@ table
 .img-cart img
 {
 	max-width: 90%;
+}
+.price_form
+{
+	background-color: white;
+	width: 365px;
+	height: 365px;
+	position: relative;
+	margin: auto;
+	padding: 30px 30px 10px 30px;
+	text-align: center;
+}
+.header_price_form
+{
+	color: #c93444;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.text_callback_form input[type="text"] {
+	border-bottom: 1px solid #b3b3b3;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	padding: 5px;
+	font-size: 16px;
+	font-weight: 300;
+	box-shadow: none;
+	margin: 10px;
+	text-align: center;
+}
+.text_callback_form
+{
+	max-width: 320px;
+}
+.callback_form_button {
+    background-color: #ff6600;
+    border: medium none;
+    box-shadow: 0 4px 8px #999;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px;
+    text-transform: uppercase;
+    width: 250px;
+    margin: 20px 0px;
 }

@@ -7,5 +7,6 @@ Route::get('/query', 'SearchController@query');
 Route::get('/addtires', 'TiresAddController@index');
 Route::get('/allo','TestsController@index');
 Route::get('/update','TestsController@update');
+Route::post('/mail','MailController@callback');
 
 

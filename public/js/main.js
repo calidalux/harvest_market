@@ -1,5 +1,25 @@
 jQuery(document).ready(function($) {
 
+    $('#MAIN_BUTTON').magnificPopup({
+        type:'inline',
+        midClick: true 
+    });
+
+    $("#CALL_FORM").submit(function() {
+        $.ajax({
+            type: "POST",
+            url: "/mail",
+            data: $(this).serialize()
+        }).done(function() {
+            alert('Done!');
+            //location.href = 'price250915.xls';
+            setTimeout(function() {
+                
+                $("#CALL_FORM").trigger("reset");
+            }, 1000);
+        });
+        return false;
+    });
 
     var engine = new Bloodhound({
         remote: 
