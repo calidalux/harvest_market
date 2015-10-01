@@ -64,10 +64,11 @@
 				<input type="hidden" name="tire" value="{{ $tire->size }} {{ $tire->brand }} {{ $tire->model }}">
 				Мы посчитаем доставку транспортной кампанией в город 
 
-				<input type="text" requried name="city" placeholder="Введите ваш город"> <br> и Вам перевоним на номер: <input type="text" requried name="phone" placeholder="Введите ваш номер"> <br>
+				<input type="text" requried name="city" required placeholder="Введите ваш город"> <br> и Вам перевоним на номер: <input type="text" requried name="phone" required placeholder="Введите ваш номер"> <br>
 				 (через 10-15 минут)
 				<br>
-				<button align='center' type="submit" class="callback_form_button">Отправить</button>
+				<input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
+				<button align='center' type="submit"  class="callback_form_button">Отправить</button>
 			</form>
 		</div>
 	</div>
