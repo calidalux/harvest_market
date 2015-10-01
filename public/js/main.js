@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
     $("#CALL_FORM").submit(function() {
         $.ajax({
             type: "POST",
-            url: "http://harvest.dev/mail",
+            url: "http://harvestltd.ru/mail",
             data: $(this).serialize()
         }).done(function() {
             alert('Done!');
