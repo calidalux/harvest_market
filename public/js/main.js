@@ -11,8 +11,7 @@ jQuery(document).ready(function($) {
             url: "http://harvestltd.ru/mail",
             data: $(this).serialize()
         }).done(function() {
-            alert('Done!');
-            //location.href = 'price250915.xls';
+            location.href = '/done';
             setTimeout(function() {
                 
                 $("#CALL_FORM").trigger("reset");
