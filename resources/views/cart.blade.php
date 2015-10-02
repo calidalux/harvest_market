@@ -9,7 +9,7 @@
 				<li><a href="/">Главная</a> > </li>
 				@if ($tire->class === 'Сельхоз шины') <li><a href="/?filterTireClass=Сельхоз+шины">Сельхоз шины</a>></li> @endif
 				@if ($tire->class === 'Индустриальные шины') <li><a href="/?filterTireClass=Индустриальные+шины">Индустриальные шины</a>></li> @endif
-				<li>{{ $tire->size}} {{ $tire->brand}} {{ $tire->model}} </li>
+				<li class="name_bread">  {{ $tire->size}} {{ $tire->brand}} {{ $tire->model}} </li>
 			</ul>
 		</div>
 		<div class="cart-cart">
