@@ -76,3 +76,10 @@
 </div>
 
 @stop
+
+@section('title')
+
+<title>Шина {{ $tire->size }} {{ $tire->brand }} {{ $tire->model }} за {{ number_format($tire->price, 0, ',', ' ')  }} руб. | Харвест</title>
+<meta name="description" content="Шина {{ $tire->size }} {{ $tire->brand }} {{ $tire->model }} за {{ number_format($tire->price, 0, ',', ' ')  }} руб. | Харвест">
+
+@stop

@@ -8,8 +8,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Заголовок</title>
-	<meta name="description" content="">
+	@yield('title')
 
 	<!-- Header CSS (First Sections of Website: compress & paste after release from _header.css here) -->
 	<style></style>

@@ -8,5 +8,7 @@ Route::get('/addtires', 'TiresAddController@index');
 Route::get('/allo','TestsController@index');
 Route::get('/update','TestsController@update');
 Route::post('/mail','MailController@callback');
+Route::get('/done','TiresController@done');
+
 
 

@@ -33,3 +33,10 @@
 @endforeach
 
 @stop
+
+@section('title')
+
+<title>Харвест. Магазин больших шин.</title>
+<meta name="description" content="Поставка грузовых, сельскохозяйственных и индустриальных шин по все России">
+
+@stop

@@ -493,3 +493,8 @@ table
     width: 250px;
     margin: 20px 0px;
 }
+.done
+{
+	text-align: center;
+	padding-top: 20px;
+}
