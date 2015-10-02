@@ -64,7 +64,7 @@
 				<input type="hidden" name="tire" value="{{ $tire->size }} {{ $tire->brand }} {{ $tire->model }}">
 				Мы посчитаем доставку транспортной кампанией в город 
 
-				<input type="text" requried name="city" required placeholder="Введите ваш город"> <br> и Вам перевоним на номер: <input type="text" requried name="phone" required placeholder="Введите ваш номер"> <br>
+				<input type="text" requried name="city" required placeholder="Введите ваш город"> <br> и Вам перезвоним на номер: <input type="text" requried name="phone" required placeholder="Введите ваш номер"> <br>
 				 (через 10-15 минут)
 				<br>
 				<input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
