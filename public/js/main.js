@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
             url: "http://harvestltd.ru/mail",
             data: $(this).serialize()
         }).done(function() {
-            location.href = '/done';
+            location.href = 'http://harvestltd.ru/done';
             setTimeout(function() {
                 
                 $("#CALL_FORM").trigger("reset");
