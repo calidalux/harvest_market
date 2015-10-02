@@ -21,5 +21,15 @@ class TestsController extends Controller {
 		return 'ЧПУ обновлены';
 	}
 
+	public function update()
+	{
+		
+		$tires = Tire::where();
+
+		
+
+		return 'ЧПУ обновлены';
+	}
+
 
 }

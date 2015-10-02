@@ -4,6 +4,14 @@
 
 <div class="container-fluid">
 	<div class="col-xs-12 col-lg-9 padding-top-76">
+		<div class="bread">
+			<ul>
+				<li><a href="/">Главная</a> > </li>
+				@if ($tire->class === 'Сельхоз шины') <li><a href="/?filterTireClass=Сельхоз+шины">Сельхоз шины</a>></li> @endif
+				@if ($tire->class === 'Индустриальные шины') <li><a href="/?filterTireClass=Индустриальные+шины">Индустриальные шины</a>></li> @endif
+				<li>{{ $tire->size}} {{ $tire->brand}} {{ $tire->model}} </li>
+			</ul>
+		</div>
 		<div class="cart-cart">
 
 					@if ($tire->class === 'Сельхоз шины') <div class="header_cart header_orange"> @endif
@@ -14,7 +22,7 @@
 			</div>
 			<div class="row">
 				<div class="col-xs-6">
-					<div class="img_cart">
+					<div class="img_cart_cart">
 						<img src="{{ asset($tire->img_big) }}">
 					</div>
 					<div class="price_cart">

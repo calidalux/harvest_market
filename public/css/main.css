@@ -35,8 +35,21 @@ body{
     margin-top: 18px;
 }
 .bread{
-	margin: 15px 0;
+	margin: 20px 0 5px 0;
 	font-weight: 300;
+	display: inline-block;
+}
+.bread ul li{
+	display: inline-block;
+	list-style-type: none;
+}
+.bread ul
+{
+	padding: 0;
+}
+.bread a
+{
+	padding: 10px;
 }
 a{
 	text-decoration: underline;
@@ -53,7 +66,6 @@ a{
 .cart-cart
 {
 	box-shadow: 0px 4px 8px #999;
-	margin-top: 20px;
 }
 h4
 {
@@ -368,6 +380,12 @@ hr{
 	padding: 15px 0;
 
 }
+.img_cart_cart
+{
+	text-align: center;
+	padding: 15px 0;
+
+}
 .price
 {
 	margin: 10px 25px;
@@ -439,6 +457,7 @@ table
     position: relative;
     text-transform: uppercase;
     width: 60%;
+    margin-bottom: 25px;
 }
 .more_cart
 {
@@ -497,4 +516,7 @@ table
 {
 	text-align: center;
 	padding-top: 20px;
+}
+.img_cart > img {
+    max-width: 150px;
 }
