@@ -18,6 +18,7 @@ class SearchController extends Controller {
     public function query()
     {
         $query = Input::get('filterTire');
+        $query = str_replace(',', '.', $query);
         $res   = Typeahead::where('size', 'LIKE', "%$query%")->get();
         return Response::json($res);
     }

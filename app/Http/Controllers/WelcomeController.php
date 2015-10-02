@@ -45,6 +45,7 @@ class WelcomeController extends Controller {
 			}
 
 			if (isset($filter_tire_size)) {
+				$filter_tire_size = str_replace(',', '.', $filter_tire_size);
 				$query->where('size', 'LIKE', "%$filter_tire_size%");
 			}
 			if (isset($filter_tire_brand)) {
