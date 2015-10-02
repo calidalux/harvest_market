@@ -15,7 +15,7 @@
 					<span class="cart_title_model">{{ $tire->model}}</span>
 					</div>
 					<div class="img_cart">
-						<img src="{{ asset($tire->img_big) }}">
+						<a href="/catalog/{{ $tire->slug }}"><img src="{{ asset($tire->img_big) }}"></a>
 					</div>
 					<div class="price">
 						{{ number_format($tire->price, 0, ',', ' ')  }} руб.
