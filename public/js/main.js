@@ -35,7 +35,7 @@ jQuery(document).ready(function($) {
     $("#filterTire").typeahead({
         hint: true,
         highlight: true,
-        minLength: 2
+        minLength: 1
     }, {
         source: engine.ttAdapter(),
         // This will be appended to "tt-dataset-" to form the class name of the suggestion menu.
