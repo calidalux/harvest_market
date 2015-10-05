@@ -3,6 +3,8 @@
 use App\Http\Requests;
 use App\Tire;
 use App\Http\Controllers\Controller;
+use Input;
+use Form;
 
 use Illuminate\Http\Request;
 
@@ -17,18 +19,15 @@ class TiresController extends Controller {
 
 	}
 
-	public function cart($id)
+	public function cart($slug)
 	{
-		$tire = Tire::find($id);
-
+		$tire = Tire::where('slug', '=', $slug)->firstOrFail();
 		return view('cart', compact('tire'));
 	}
 
-	public function agri()
+	public function done()
 	{
-		$tires = Tire::all();
-
-		return view('agri', compact('tires'));
+		return view('done');
 	}
 	
 

@@ -1,8 +1,15 @@
 <?php
 
 Route::get('/', 'WelcomeController@index');
-Route::get('tires', 'TiresController@index');
-Route::get('agri/{id}','TiresController@cart');
-Route::get('agri','TiresController@agri');
+Route::get('catalog/{slug}','TiresController@cart');
+Route::get('/query', 'SearchController@query');
+//Route::get('/addtype', 'AddTypeController@index'); //Добавление типоразмеров в подсказки
+Route::get('/addtires', 'TiresAddController@index');
+Route::get('/allo','TestsController@index');
+Route::get('/update','TestsController@update');
+Route::post('/mail','MailController@callback');
+Route::get('/done','TiresController@done');
+//Route::get('/delivery','WelcomeController@delivery');
+
 
 
