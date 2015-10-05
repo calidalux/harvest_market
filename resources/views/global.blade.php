@@ -5,7 +5,7 @@
 <div class="container-fluid padding-top-76">
 <h1>Большие шины с доставкой по РФ</h1>
 @foreach($tires as $tire)
-	<div class="col-xs-3 col-lg-2">
+	<div class="col-xs-3">
 		<div class="cart">
 
 					@if ($tire->class === 'Сельхоз шины') <div class="header_cart header_orange"> @endif
