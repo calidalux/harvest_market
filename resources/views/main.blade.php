@@ -32,6 +32,36 @@
 	<link rel="stylesheet" href="{{ asset('css/main.css') }}">
 	<link rel="stylesheet" href="{{ asset('libs/magnific-popup/magnific-popup.css')}}">
 
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function (d, w, c) {
+			(w[c] = w[c] || []).push(function() {
+				try {
+					w.yaCounter32854022 = new Ya.Metrika({
+						id:32854022,
+						clickmap:true,
+						trackLinks:true,
+						accurateTrackBounce:true,
+						webvisor:true,
+						trackHash:true
+					});
+				} catch(e) { }
+			});
+
+			var n = d.getElementsByTagName("script")[0],
+			s = d.createElement("script"),
+			f = function () { n.parentNode.insertBefore(s, n); };
+			s.type = "text/javascript";
+			s.async = true;
+			s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+			if (w.opera == "[object Opera]") {
+				d.addEventListener("DOMContentLoaded", f, false);
+			} else { f(); }
+		})(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/32854022" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
 
 	
 </head>
@@ -48,7 +78,7 @@
 					<div class="row">
 						<div class="col-xs-12 top-nav-filter">
 							<a class="black" href="/">все шины</a>
-						<!--	<a class="blue" href="/?filterTireClass=Грузовые+шины">Грузовые шины</a> -->
+							<!--	<a class="blue" href="/?filterTireClass=Грузовые+шины">Грузовые шины</a> -->
 							<a class="orange" href="/?filterTireClass=Сельхоз+шины">Сельхоз шины</a>
 							<a class="green" href="/?filterTireClass=Индустриальные+шины">Индустриальные шины</a>
 						</div>
@@ -87,12 +117,12 @@
 	<![endif]-->
 
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="{{ asset('js/typeahead.bundle.js') }}"></script>
-<script src="{{ asset('libs/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
-<script src="{{ asset('js/main.js') }}"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="{{ asset('js/typeahead.bundle.js') }}"></script>
+	<script src="{{ asset('libs/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
+	<script src="{{ asset('js/main.js') }}"></script>
 
 </body>
 </html>
