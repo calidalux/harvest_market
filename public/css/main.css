@@ -367,9 +367,9 @@ hr{
 }
 .cart_title_model
 {
-	font-size: 12px;
+	font-size: 10px;
 	color: white;
-	font-weight: 600;
+	font-weight: 400;
 	text-transform: uppercase;
 	line-height: 2;
 
@@ -523,4 +523,9 @@ table
 .name_bread
 {
 	margin-left: 10px;
+}
+.info_header
+{
+	padding-right: 30px;
+	font-weight: 300;
 }
