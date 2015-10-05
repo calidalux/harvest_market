@@ -517,7 +517,7 @@ table
 	text-align: center;
 	padding-top: 20px;
 }
-.img_cart > img {
+.img_cart img {
     max-width: 150px;
 }
 .name_bread

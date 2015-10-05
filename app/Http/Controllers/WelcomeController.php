@@ -59,4 +59,9 @@ class WelcomeController extends Controller {
 		return view('global', compact('tires'));
 	}
 
+	public function delivery()
+	{
+		return view('delivery');
+	}
+
 }

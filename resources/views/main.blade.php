@@ -81,6 +81,7 @@
 							<!--	<a class="blue" href="/?filterTireClass=Грузовые+шины">Грузовые шины</a> -->
 							<a class="orange" href="/?filterTireClass=Сельхоз+шины">Сельхоз шины</a>
 							<a class="green" href="/?filterTireClass=Индустриальные+шины">Индустриальные шины</a>
+							<!-- <a class="black" href="/delivery">Доставка по РФ</a> -->
 						</div>
 					</div>
 					<div class="row">
