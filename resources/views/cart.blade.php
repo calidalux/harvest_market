@@ -9,6 +9,7 @@
 				<li><a href="/">Главная</a> > </li>
 				@if ($tire->class === 'Сельхоз шины') <li><a href="/?filterTireClass=Сельхоз+шины">Сельхоз шины</a>></li> @endif
 				@if ($tire->class === 'Индустриальные шины') <li><a href="/?filterTireClass=Индустриальные+шины">Индустриальные шины</a>></li> @endif
+				@if ($tire->class === 'Грузовые шины') <li><a href="/?filterTireClass=Грузовые+шины">Грузовые шины</a>></li> @endif
 				<li class="name_bread">  {{ $tire->size}} {{ $tire->brand}} {{ $tire->model}} </li>
 			</ul>
 		</div>
@@ -16,9 +17,10 @@
 
 					@if ($tire->class === 'Сельхоз шины') <div class="header_cart header_orange"> @endif
 					@if ($tire->class === 'Индустриальные шины') <div class="header_cart header_green"> @endif
+					@if ($tire->class === 'Грузовые шины') <div class="header_cart header_blue"> @endif
 					
 				<span class="cart_title_size">{{ $tire->size}}</span> <br>
-				<span class="cart_title_model">{{ $tire->model}}</span>
+				<span class="cart_title_model">{{ $tire->model}} @if ($tire->class === 'Грузовые шины') <span class="truck_type">{{ $tire->type_arch}}</span> @endif</span>
 			</div>
 			<div class="row">
 				<div class="col-xs-6">

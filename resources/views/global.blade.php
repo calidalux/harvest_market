@@ -9,9 +9,11 @@
 
 					@if ($tire->class === 'Сельхоз шины') <div class="header_cart header_orange"> @endif
 					@if ($tire->class === 'Индустриальные шины') <div class="header_cart header_green"> @endif
+					@if ($tire->class === 'Грузовые шины') <div class="header_cart header_blue"> @endif
 
-					<span class="cart_title_size">{{ $tire->size}}</span> <br>
-					<span class="cart_title_model">{{ $tire->model}}</span>
+					<span class="cart_title_size">{{ $tire->size}}</span> 
+					 <br>
+					<span class="cart_title_model">{{ $tire->model}} @if ($tire->class === 'Грузовые шины') <span class="truck_type">{{ $tire->type_arch}}</span> @endif</span>
 					</div>
 					<div class="img_cart">
 						<a href="/catalog/{{ $tire->slug }}"><img src="{{ asset($tire->img_big) }}"></a>
@@ -25,6 +27,7 @@
 					<div class="icon">
 						@if ($tire->class === 'Сельхоз шины') <img src="{{ asset("img/agri_icon.png") }}"> @endif
 						@if ($tire->class === 'Индустриальные шины') <img src="{{ asset("img/ind_icon.png") }}"> @endif
+						@if ($tire->class === 'Грузовые шины') <img src="{{ asset("img/truck_icon.png") }}"> @endif
 						
 					</div>
 		</div>

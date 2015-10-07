@@ -288,7 +288,7 @@ hr{
 }
 .blue
 {
-	color:  #3f51b5;
+	color:  #3949ab;
 }
 .orange
 {
@@ -357,6 +357,10 @@ hr{
 .header_green
 {
 	background-color: #689f38;
+}
+.header_blue
+{
+	background-color: #3949ab;
 }
 .cart_title_size
 {
@@ -538,4 +542,9 @@ html
 {
 	padding: 0;
 	margin:0;
+}
+.truck_type {
+    color: yellow;
+    font-weight: 500;
+    margin-left: 15px;
 }
