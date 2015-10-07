@@ -10,6 +10,7 @@ Route::get('/update','TestsController@update');
 Route::post('/mail','MailController@callback');
 Route::get('/done','TiresController@done');
 //Route::get('/delivery','WelcomeController@delivery');
+//Route::get('/mail','WelcomeController@mail');
 
 
 
