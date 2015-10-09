@@ -25,7 +25,7 @@
 			<div class="row">
 				<div class="col-xs-6">
 					<div class="img_cart_cart">
-						<img src="{{ asset($tire->img_big) }}">
+						<img src="{{ asset($tire->img_big) }}" alt="{{ $tire->size}} {{ $tire->brand}} {{ $tire->model}}">
 					</div>
 					<div class="price_cart">
 						{{ number_format($tire->price, 0, ',', ' ')  }} руб.

@@ -70,7 +70,7 @@
 		<div class="container-fluid main-screeen">
 			<div class="row">
 				<div class="col-xs-1">
-					<a href="/"><img class="logo" src="{{ asset('img/logo.png') }}" alt="harvest-logo"></a>
+					<a href="/"><img class="logo" src="{{ asset('img/logo.png') }}" alt="Харвест"></a>
 				</div>
 				<div class="col-xs-8">
 					<div class="row">
