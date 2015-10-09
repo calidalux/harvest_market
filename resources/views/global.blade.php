@@ -27,7 +27,7 @@
 					<div class="icon">
 						@if ($tire->class === 'Сельхоз шины') <img src="{{ asset("img/agri_icon.png") }}" alt="Сельхоз шина"> @endif
 						@if ($tire->class === 'Индустриальные шины') <img src="{{ asset("img/ind_icon.png") }}" alt="Индустриальная шина"> @endif
-						@if ($tire->class === 'Грузовые шины') <img src="{{ asset("img/truck_icon.png") }}"alt="Грузовая шина"> @endif
+						@if ($tire->class === 'Грузовые шины') <img src="{{ asset("img/truck_icon.png") }}" alt="Грузовая шина"> @endif
 						
 					</div>
 		</div>
