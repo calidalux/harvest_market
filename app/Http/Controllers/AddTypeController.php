@@ -101,7 +101,8 @@ class AddTypeController extends Controller {
 			'445/65R22.5',
 			'12.00R24',
 			'325/95R24',
-			'295/75R22.5'
+			'295/75R22.5',
+			'420/85R34'
 			);
 
 foreach ($data as $idata) {		
