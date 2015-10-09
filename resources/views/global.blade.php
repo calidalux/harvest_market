@@ -37,6 +37,7 @@
 		<meta itemprop="brand" content="{{ $tire->brand }}">
 		<meta itemprop="category" content="{{ $tire->class }}">
 		<meta itemprop="name" content="{{ $tire->size }} {{ $tire->brand }} {{ $tire->model }}">
+		<meta itemprop="description" content="Шина {{ $tire->size }} {{ $tire->brand }} {{ $tire->model }} с доставкой по РФ.">
 	</div>
 </div>
 @endforeach
