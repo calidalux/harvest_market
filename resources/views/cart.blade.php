@@ -18,6 +18,7 @@
 			<meta itemprop="brand" content="{{ $tire->brand }}">
 			<meta itemprop="category" content="{{ $tire->class }}">
 			<meta itemprop="name" content="{{ $tire->size }} {{ $tire->brand }} {{ $tire->model }}">
+			<meta itemprop="description" content="Шина {{ $tire->size }} {{ $tire->brand }} {{ $tire->model }} с доставкой по РФ.">
 
 			@if ($tire->class === 'Сельхоз шины') <div class="header_cart header_orange"> @endif
 			@if ($tire->class === 'Индустриальные шины') <div class="header_cart header_green"> @endif
