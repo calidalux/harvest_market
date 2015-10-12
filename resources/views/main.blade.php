@@ -79,7 +79,7 @@
 					<div class="row">
 						<div class="col-xs-9 filter-option">
 							<form action="/">
-								<input type="text" id="filterTire" name="filterTireSize" value="{{Input::get('filterTireSize')}}" placeholder="Типоразмер шины (Например 710/70R42)">
+								<input type="text" id="filterTire" name="filterTireSize" value="{{Input::get('filterTireSize')}}" required placeholder="Типоразмер шины (Например 710/70R42)">
 								<button class="top-button">Поиск</button>
 							</form>
 						</div>
