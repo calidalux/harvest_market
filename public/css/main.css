@@ -409,7 +409,7 @@ hr{
 	text-decoration: none;
 	
 }
-.icon > img {
+.icon a img {
     margin: -90px 20px 0 0;
     float: right;
 }

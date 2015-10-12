@@ -3,6 +3,15 @@
 @section('content')
 
 <div class="container-fluid padding-top-76">
+<div class="col-xs-12">
+	
+	@if (Input::get('filterTireClass') === 'Сельхоз шины') <h1>Сельскохозяйственные шины</h1>
+	@elseif (Input::get('filterTireClass') === 'Индустриальные шины') <h1>Индустриальные шины</h1>
+	@elseif (Input::get('filterTireClass') === 'Грузовые шины') <h1>Грузовые шины</h1>
+	@else <h1>Наш каталог</h1>
+	@endif
+
+</div>
 	@foreach($tires as $tire)
 	<div class="col-xs-3">
 		<div class="cart" itemscope itemtype="http://schema.org/Product">
@@ -30,9 +39,9 @@
 			<a itemprop="url" href="/catalog/{{ $tire->slug }}">Подробнее...</a>
 		</div>
 		<div class="icon">
-			@if ($tire->class === 'Сельхоз шины') <img src="{{ asset("img/agri_icon.png") }}" alt="Сельхоз шина"> @endif
-			@if ($tire->class === 'Индустриальные шины') <img src="{{ asset("img/ind_icon.png") }}" alt="Индустриальная шина"> @endif
-			@if ($tire->class === 'Грузовые шины') <img src="{{ asset("img/truck_icon.png") }}" alt="Грузовая шина"> @endif		
+			@if ($tire->class === 'Сельхоз шины')  <a href="/?filterTireClass=Cельхоз+шины"><img src="{{ asset("img/agri_icon.png") }}" alt="Сельхоз шина"></a> @endif
+			@if ($tire->class === 'Индустриальные шины') <a href="/?filterTireClass=Индустриальные+шины"><img src="{{ asset("img/ind_icon.png") }}" alt="Индустриальная шина"></a> @endif
+			@if ($tire->class === 'Грузовые шины') <a href="/?filterTireClass=Грузовые+шины"><img src="{{ asset("img/truck_icon.png") }}" alt="Грузовая шина"></a> @endif		
 		</div>
 		<meta itemprop="brand" content="{{ $tire->brand }}">
 		<meta itemprop="category" content="{{ $tire->class }}">
