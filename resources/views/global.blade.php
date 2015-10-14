@@ -29,7 +29,9 @@
 		</div>
 		<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
 			<div class="price">
+				@if ($tire->price == 8) Цена по запросу @else
 				{{ number_format($tire->price, 0, ',', ' ')  }} руб.
+				@endif
 			</div>
 			<meta itemprop="price" content="{{ $tire->price }}">
 			<meta itemprop="priceCurrency" content="RUB">
