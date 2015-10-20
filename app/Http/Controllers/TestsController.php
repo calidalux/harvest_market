@@ -14,7 +14,7 @@ class TestsController extends Controller {
 		$tires = Tire::all();
 
 		foreach ($tires as $tire) {
-			$tire->slug = Str::slug( $tire->size . ' ' . $tire->brand . ' ' . $tire->model );
+			$tire->slug = Str::slug( $tire->size . ' ' . $tire->brand . ' ' . $tire->model . ' ' . $tire->tech );
 			$tire->save();
 		}
 

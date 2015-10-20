@@ -11,13 +11,7 @@
 	@yield('title')
 
 	<!-- Header CSS (First Sections of Website: compress & paste after release from _header.css here) -->
-	<style></style>
-
-	<!-- Fonts Loader from _fonts.css (HTML5 LocalStorage) -->
-	<script>!function(){function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))a(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(a(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var c=document.createElement("link");c.href=o,c.rel="stylesheet",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c),document.cookie="font_css_cache"}}function a(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="_fonts.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();</script>
-	
-	<!-- Load CSS Compilled without JS -->
-	<noscript><link rel="stylesheet" href="compiled.min.css"></noscript>
+	<style></style>	
 	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -60,10 +54,8 @@
 			} else { f(); }
 		})(document, window, "yandex_metrika_callbacks");
 	</script>
-	<noscript><div><img src="https://mc.yandex.ru/watch/32854022" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 	<!-- /Yandex.Metrika counter -->
 
-	
 </head>
 
 <body>
@@ -72,13 +64,13 @@
 		<div class="container-fluid main-screeen">
 			<div class="row">
 				<div class="col-xs-1">
-					<a href="/"><img class="logo" src="{{ asset('img/logo.png') }}" alt="harvest-logo"></a>
+					<a href="/"><img class="logo" src="{{ asset('img/logo.png') }}" alt="Харвест"></a>
 				</div>
 				<div class="col-xs-8">
 					<div class="row">
 						<div class="col-xs-12 top-nav-filter">
 							<a class="black" href="/">все шины</a>
-							<!--	<a class="blue" href="/?filterTireClass=Грузовые+шины">Грузовые шины</a> -->
+							<a class="blue" href="/?filterTireClass=Грузовые+шины">Грузовые шины</a>
 							<a class="orange" href="/?filterTireClass=Сельхоз+шины">Сельхоз шины</a>
 							<a class="green" href="/?filterTireClass=Индустриальные+шины">Индустриальные шины</a>
 							<!-- <a class="black" href="/delivery">Доставка по РФ</a> -->
@@ -87,7 +79,7 @@
 					<div class="row">
 						<div class="col-xs-9 filter-option">
 							<form action="/">
-								<input type="text" id="filterTire" name="filterTireSize" value="{{Input::get('filterTireSize')}}" placeholder="Типоразмер шины (Например 710/70R42)">
+								<input type="text" id="filterTire" name="filterTireSize" value="{{Input::get('filterTireSize')}}" required placeholder="Типоразмер шины (Например 710/70R42)">
 								<button class="top-button">Поиск</button>
 							</form>
 						</div>

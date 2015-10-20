@@ -1,6 +1,9 @@
 <?php namespace App\Http\Controllers;
 use App\Tire;
 use Input;
+use Mail;
+use App\Email;
+use Storage;
 
 class WelcomeController extends Controller {
 
@@ -54,7 +57,7 @@ class WelcomeController extends Controller {
 
 		})->get();
 
-		$tires = $tires->sortByDesc('updated_at');
+		$tires = $tires->sortBy('sort_id'); //Сортировка
 
 		return view('global', compact('tires'));
 	}
@@ -62,6 +65,23 @@ class WelcomeController extends Controller {
 	public function delivery()
 	{
 		return view('delivery');
+	}
+
+	public function mail()
+	{	
+		$emails = Email::where('id', '>', 348)->get();
+
+
+		foreach ($emails as $email) {
+
+
+			Mail::send('emails/mailt', array('key' => $email->email), function($message) use ($email)
+			{
+				$message->to($email->email)->subject('Поставка шин по РФ');
+			});
+			Storage::append('mail_log.txt', $email->email);
+		}
+		return 'Отправлено';
 	}
 
 }
