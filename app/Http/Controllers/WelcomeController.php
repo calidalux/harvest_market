@@ -57,7 +57,7 @@ class WelcomeController extends Controller {
 
 		})->get();
 
-		$tires = $tires->sortByDesc('updated_at');
+		$tires = $tires->sortBy('sort_id'); //Сортировка
 
 		return view('global', compact('tires'));
 	}
