@@ -46,6 +46,7 @@ class myPEC
                 )
     );
     $sdk->close();
-    return $result;
+    $result_json = json_decode($result);
+    return $result_json->transfers[0]->costTotal;
     }
 }

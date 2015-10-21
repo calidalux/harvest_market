@@ -144,6 +144,7 @@ return [
 		'App\Providers\ConfigServiceProvider',
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
+		'Maatwebsite\Excel\ExcelServiceProvider',
 
 		'SleepingOwl\Admin\AdminServiceProvider',
 		"Illuminate\Broadcasting\BroadcastServiceProvider"
@@ -203,6 +204,7 @@ return [
 	'AdminForm'     => 'SleepingOwl\Admin\Form\AdminForm',
 	'AdminTemplate' => 'SleepingOwl\Admin\Templates\Facade\AdminTemplate',
 	'FormItem'      => 'SleepingOwl\Admin\FormItems\FormItem',
+	'Excel'					=> 'Maatwebsite\Excel\Facades\Excel',
 
 	],
 

@@ -6,59 +6,51 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Lib\pecAPI\myPEC;
-use App\Lib\pecAPI\PecomKabinet;
+use App\Lib\pecAPI\pecomIdTownFinder;
+use Excel;
+
 
 class GuzzleController extends Controller
 {
-
-    public function findTown()
-    {
-        $data = new PecomKabinet('harvestltd', '5A473F678485B056318A0E4B9E1E2FD42ECCC3D0');
-        $towns = [
-            'Тамбов',
-            'Нижний Новгород',
-            'Оренбург',
-            'Пенза',
-            'Уфа',
-            'Саранск',
-            'Казань',
-            'Самара',
-            'Саратов',
-            'Ульяновск',
-            'Чебоксары',
-            'Волгоград',
-            'Барнаул',
-            'Новосибирск',
-            'Омск',
-            'Горно-Алтайск',
-            'Абакан'
-        ];
-        foreach ($towns as $town) {
-            $result = $data->call('branches', 'findbytitle', array('title' => $town)); //Получаем информацию по названию города
-            $response = json_decode($result);
-            if (isset($response->items[0]->cityId)) {
-               $out[][$town] = $response->items[0]->cityId;
-            } else
-            {
-                $out[][$town] = $response->items[0]->branchId;
-            }
-            
-        }
-        var_dump($out);
-        return "Done!";
-        //return $response->items[0]->cityId;  
-
-         //$result = $data->call('branches', 'findbytitle', array('title' => 'Саратов')); //Получаем информацию по названию города
-         //return $result;
-    }
-
     public function index()
-    {          
-        $main = new myPEC;
-        $data = $main->getCount(67083, 502, "2015-10-22", 1, 1, 1, 1, 1, 1);
+    {   
+        $towns_class = new pecomIdTownFinder;       
+        $main_class = new myPEC;
 
-        return $data;
+        $towns = $towns_class->findTown();
+        $sizes = array(
+            '12.5' => array(
+                0.7, 2, 310
+                ),
+            '710' => array(
+                0.1, 0.3, 56
+                ),
+            '630' => array(
+                0.3, 0.1, 20
+                ),
+            );
+
+        foreach ($towns as $town) {
+            $count_sizes = 0;
+            foreach ($sizes as $size) {
+                $data[][$count_sizes] = $main_class->getCount(67083, $town['id'], date("Y-m-d"), $size[0], $size[1], $size[1], $size[0] * $size[1] * $size[1], $size[1], $size[2]);
+                $count_sizes = $count_sizes + 1;
+            }
+        }
         
+    var_dump($data);
+
+     /*   Excel::create('DOCA', function($excel) use ($sizes) {
+
+            $excel->sheet('list 1', function($sheet) use ($sizes) {
+
+
+                $sheet->fromArray($sizes);        
+
+            });
+
+        })->export('xls'); */
+
     }
-    
+
 }
