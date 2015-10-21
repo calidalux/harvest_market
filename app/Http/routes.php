@@ -11,6 +11,9 @@ Route::post('/mail','MailController@callback'); //Отправка заявки
 Route::get('/done','TiresController@done');	//Страница благодарности
 //Route::get('/delivery','WelcomeController@delivery');
 //Route::get('/mail','WelcomeController@mail');
+Route::get('/guzzle','GuzzleController@index');	//Тест guzzle
+Route::get('/town','GuzzleController@findTown');	//Поиск города по ids
+
 
 
 
