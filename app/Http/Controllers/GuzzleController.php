@@ -19,37 +19,52 @@ class GuzzleController extends Controller
 
         $towns = $towns_class->findTown();
         $sizes = array(
-            '12.5' => array(
-                0.7, 2, 310
+            '12.5L-15' => array(
+                0.312, 0.815, 21
                 ),
-            '710' => array(
-                0.1, 0.3, 56
+            '14.9-24' => array(
+                0.386, 1.265, 58
                 ),
-            '630' => array(
-                0.3, 0.1, 20
+            '420/90R30' => array(
+                0.439, 1.486, 133
+                ),
+            '600/70R30' => array(
+                0.61, 1.595, 214
+                ),
+            '650/75R32' => array(
+                0.65, 1.791, 278
+                ),
+            '520/85R42' => array(
+                0.538, 1.935, 225
+                ),
+            '710/70R42' => array(
+                0.724, 2.055, 351
                 ),
             );
+
+        $count_towns = 0;
 
         foreach ($towns as $town) {
             $count_sizes = 0;
             foreach ($sizes as $size) {
-                $data[][$count_sizes] = $main_class->getCount(67083, $town['id'], date("Y-m-d"), $size[0], $size[1], $size[1], $size[0] * $size[1] * $size[1], $size[1], $size[2]);
+                $data[$town['Город']][$count_sizes] = $main_class->getCount(67083, $town['id'], date("Y-m-d"), $size[0], $size[1], $size[1], $size[0] * $size[1] * $size[1], $size[1], $size[2]);
                 $count_sizes = $count_sizes + 1;
             }
+            $count_towns = $count_towns + 1;
         }
         
-    var_dump($data);
+   // var_dump($data);
 
-     /*   Excel::create('DOCA', function($excel) use ($sizes) {
+        Excel::create('DOCA', function($excel) use ($data) {
 
-            $excel->sheet('list 1', function($sheet) use ($sizes) {
+            $excel->sheet('list 1', function($sheet) use ($data) {
 
 
-                $sheet->fromArray($sizes);        
+                $sheet->fromArray($data);        
 
             });
 
-        })->export('xls'); */
+        })->export('xls');
 
     }
 
