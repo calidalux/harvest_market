@@ -10,7 +10,6 @@ Route::get('/query', 'SearchController@query'); //Запрос для поиск
 Route::post('/mail','MailController@callback'); //Отправка заявки
 Route::get('/done','TiresController@done');	//Страница благодарности
 //Route::get('/delivery','WelcomeController@delivery');
-//Route::get('/mail','WelcomeController@mail');
 
 
 
