@@ -52,7 +52,7 @@ return [
 	|
 	*/
 
-	'locale' => 'en',
+	'locale' => 'ru',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -65,7 +65,7 @@ return [
 	|
 	*/
 
-	'fallback_locale' => 'en',
+	'fallback_locale' => 'ru',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -147,6 +147,7 @@ return [
 		'Maatwebsite\Excel\ExcelServiceProvider',
 
 		'SleepingOwl\Admin\AdminServiceProvider',
+		'SleepingOwl\AdminLteTemplate\AdminLteTemplateServiceProvider',
 		"Illuminate\Broadcasting\BroadcastServiceProvider"
 		],
 
@@ -203,8 +204,7 @@ return [
 	'AdminDisplay'  => 'SleepingOwl\Admin\Display\AdminDisplay',
 	'AdminForm'     => 'SleepingOwl\Admin\Form\AdminForm',
 	'AdminTemplate' => 'SleepingOwl\Admin\Templates\Facade\AdminTemplate',
-	'FormItem'      => 'SleepingOwl\Admin\FormItems\FormItem',
-	'Excel'					=> 'Maatwebsite\Excel\Facades\Excel',
+	'FormItem'      => 'SleepingOwl\Admin\FormItems\FormItem'
 
 	],
 
