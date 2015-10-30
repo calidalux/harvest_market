@@ -549,3 +549,38 @@ html
     font-weight: 500;
     margin-left: 15px;
 }
+.admin__header
+{
+	background-color: #448aff;
+}
+.admin__header_title
+{
+	color: white;
+	font-weight: 600;
+}
+.admin__menu
+{
+	position: fixed;
+	background-color: #999;
+	height: 100%;
+	color: white;
+}
+.admin__menu ul li
+{
+	list-style-type: none;
+	padding: 15px 15px;
+	margin: 0;
+	display: block;
+}
+.admin__menu ul li:hover
+{
+	background-color: #aaa;
+}
+.no_padding
+{
+	padding: 0 !important;
+}
+.fontSize26px
+{
+	font-size: 26px;
+}

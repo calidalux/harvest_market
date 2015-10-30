@@ -146,8 +146,6 @@ return [
 		'App\Providers\RouteServiceProvider',
 		'Maatwebsite\Excel\ExcelServiceProvider',
 
-		'SleepingOwl\Admin\AdminServiceProvider',
-		'SleepingOwl\AdminLteTemplate\AdminLteTemplateServiceProvider',
 		"Illuminate\Broadcasting\BroadcastServiceProvider"
 		],
 
@@ -195,16 +193,7 @@ return [
 	'Storage'   => 'Illuminate\Support\Facades\Storage',
 	'URL'       => 'Illuminate\Support\Facades\URL',
 	'Validator' => 'Illuminate\Support\Facades\Validator',
-	'View'      => 'Illuminate\Support\Facades\View',
-	'Admin'         => 'SleepingOwl\Admin\Admin',
-	'AdminAuth'     => 'SleepingOwl\AdminAuth\Facades\AdminAuth',
-	'Column'        => 'SleepingOwl\Admin\Columns\Column',
-	'ColumnFilter'  => 'SleepingOwl\Admin\ColumnFilters\ColumnFilter',
-	'Filter'        => 'SleepingOwl\Admin\Filter\Filter',
-	'AdminDisplay'  => 'SleepingOwl\Admin\Display\AdminDisplay',
-	'AdminForm'     => 'SleepingOwl\Admin\Form\AdminForm',
-	'AdminTemplate' => 'SleepingOwl\Admin\Templates\Facade\AdminTemplate',
-	'FormItem'      => 'SleepingOwl\Admin\FormItems\FormItem'
+	'View'      => 'Illuminate\Support\Facades\View'
 
 	],
 

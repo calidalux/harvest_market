@@ -25,16 +25,36 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="{{ asset('css/main.css') }}">
 	<link rel="stylesheet" href="{{ asset('libs/magnific-popup/magnific-popup.css')}}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 
 </head>
 
 <body>
 
-<div class="container-fluid">
-	<div class="col-md-12">
-		<h1>Панель администратора</h1>
+	<div class="container-fluid admin__header">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="admin__header_title ">Панель администратора</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 admin__menu no_padding">
+				<ul>
+					<li onclick="location.href='Гиперссылка';" style="cursor: pointer;">
+						<div class="row">
+							<div class="col-xs-3 fontSize26px"><i class="fa fa-home"></i></div>
+							<div class="col-xs-9">Главная</div>
+						</div>
+					</li>
+					<li onclick="location.href='Гиперссылка';" style="cursor: pointer;"><i class="fa fa-users"></i> Контакты</li>
+					<li onclick="location.href='Гиперссылка';" style="cursor: pointer;"><i class="fa fa-rub"></i> Сделки</li>
+					<li onclick="location.href='Гиперссылка';" style="cursor: pointer;"><i class="fa fa-check-square-o"></i> Задачи</li>
+					<li onclick="location.href='Гиперссылка';" style="cursor: pointer;"><i class="fa fa-cubes"></i> Склад</li>
+				</ul>
+			</div>
+		</div>
 	</div>
-</div>
 
 
 
