@@ -487,7 +487,7 @@ table
 	color: #c93444;
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .text_callback_form input[type="text"] {
 	border-bottom: 1px solid #b3b3b3;
@@ -549,3 +549,11 @@ html
     font-weight: 500;
     margin-left: 15px;
 }
+select
+{
+	margin: 0px 10px 5px 10px;
+	background-color: white;
+	border: solid 1px #999;
+	box-shadow: none;
+	padding: 3px;
+}	
