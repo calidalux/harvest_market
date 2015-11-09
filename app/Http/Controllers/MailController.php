@@ -21,10 +21,10 @@ class MailController extends Controller {
 		$number_cb = trim($_POST["number"]);
 
 		$message = "
-		Шина: $tire_cb \n
-		Количество: $number_cb \n
-		Город: $city_cb \n
-		Телефон: $phone_cb \n
+		Шина: $tire_cb <br>
+		Количество: $number_cb <br>
+		Город: $city_cb <br>
+		Телефон: $phone_cb
 		";
 
 		mail($recepient, $subject, $message, "From: $frm_name <$recepient>" . "\r\n" . "Reply-To: $recepient" . "\r\n" . "X-Mailer: PHP/" . phpversion() . "\r\n" . "Content-type: text/html; charset=\"utf-8\"");
