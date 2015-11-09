@@ -97,8 +97,8 @@
 				</div>
 				<div class="col-xs-3 info_header">
 					Заявки принимаются по телефону: <br>
-					<div class="phone">8 (8452) 33-88-50</div><br>
-					Пн.-Пт. с 9:00 до 17:00 МСК
+					<div class="phone">8 (800) 100-51-99</div><br>
+					Звонок бесплатный!
 				</div>
 			</div>
 		</div>
@@ -127,16 +127,6 @@
 	<script src="{{ asset('libs/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
 	<script src="{{ asset('js/main.js') }}"></script>
 
-	<div id="BBTDIV_2155">
-	</div>
-	<script type="text/javascript">
-		if (document.getElementById('BBTDIV_2155')) {
-			var BBTSystemDate = new Date();
-			document.write('<scr'+'ipt type="text/javascript" async '
-				+'src="//code.blablateka.com/2155.js?t='+BBTSystemDate.getYear()+BBTSystemDate.getMonth()
-				+BBTSystemDate.getDay()+BBTSystemDate.getHours() + '" charset="utf-8" ></scr'+'ipt>');
-		}
-	</script>
 
 </body>
 </html>

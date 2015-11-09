@@ -83,8 +83,20 @@
 		<form id="CALL_FORM">
 			<div class="text_callback_form">
 				<input type="hidden" name="tire" value="{{ $tire->size }} {{ $tire->brand }} {{ $tire->model }}">
-				Мы посчитаем доставку транспортной кампанией в город 
-
+				Мы посчитаем доставку
+				<select type="text" name="number">
+					<option selected>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+				</select> шт.
+				транспортной кампанией в город 
 				<input type="text" requried name="city" required placeholder="Введите ваш город"> <br> и Вам перезвоним на номер: <input type="text" requried name="phone" required placeholder="Введите ваш номер"> <br>
 				(через 10-15 минут)
 				<br>
