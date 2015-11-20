@@ -16,9 +16,7 @@
 	<div class="col-xs-3">
 		<div class="cart" itemscope itemtype="http://schema.org/Product">
 
-			@if ($tire->class === 'Сельхоз шины') <div class="header_cart header_orange"> @endif
-			@if ($tire->class === 'Индустриальные шины') <div class="header_cart header_green"> @endif
-			@if ($tire->class === 'Грузовые шины') <div class="header_cart header_blue"> @endif
+			<div class="header_cart">
 
 			<span class="cart_title_size">{{ $tire->size}}</span> 
 			<br>

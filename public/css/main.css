@@ -60,7 +60,6 @@ a{
 }
 .cart
 {
-	box-shadow: 0px 0px 4px #999;
 	margin-top: 20px;
 }
 .cart-cart
@@ -339,12 +338,6 @@ hr{
 	background-color: #e24d5d;
 }
 
-.cart:hover
-{
-	box-shadow: 0px 8px 16px #999;
-	margin-bottom: 27px;
-	margin-top: 18px;
-}
 .header_cart
 {
 	padding: 8px 0 6px 25px;
@@ -365,13 +358,11 @@ hr{
 .cart_title_size
 {
 	font-size: 18px;
-	color: white;
 	font-weight: 600;
 }
 .cart_title_model
 {
 	font-size: 10px;
-	color: white;
 	font-weight: 400;
 	text-transform: uppercase;
 	line-height: 2;
@@ -545,7 +536,6 @@ html
 	margin:0;
 }
 .truck_type {
-    color: yellow;
     font-weight: 500;
     margin-left: 15px;
 }
